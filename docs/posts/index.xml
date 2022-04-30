@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>文章列表 on 编程分享</title>
+    <link>http://python-ai.cn/posts/</link>
+    <description>Recent content in 文章列表 on 编程分享</description>
+    <image>
+      <url>http://python-ai.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://python-ai.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Apr 2022 13:40:38 +0800</lastBuildDate><atom:link href="http://python-ai.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog</title>
+      <link>http://python-ai.cn/posts/my-first-blog/</link>
+      <pubDate>Sat, 23 Apr 2022 13:40:38 +0800</pubDate>
+      
+      <guid>http://python-ai.cn/posts/my-first-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://python-ai.cn/posts/test/</link>
+      <pubDate>Sat, 23 Apr 2022 07:30:01 +0800</pubDate>
+      
+      <guid>http://python-ai.cn/posts/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

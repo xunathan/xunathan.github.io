@@ -2,6 +2,7 @@ baseURL: "http://python-ai.cn/"
 title: 编程分享
 paginate: 5
 theme: PaperMod
+publishDir: docs
 
 enableRobotsTXT: true
 buildDrafts: false
