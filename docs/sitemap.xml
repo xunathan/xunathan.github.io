@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://python-ai.cn/posts/python_scripts/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+    <loc>http://python-ai.cn/tags/blog/</loc>
+    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://python-ai.cn/tags/</loc>
+    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://python-ai.cn/posts/how_to_use_hugo_github/</loc>
+    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://python-ai.cn/posts/</loc>
+    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://python-ai.cn/</loc>
+    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://python-ai.cn/tags/python/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://python-ai.cn/posts/python_scripts/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,21 +43,7 @@
   </url>
   
   <url>
-    <loc>http://python-ai.cn/about/</loc>
-    <lastmod>2022-04-23T13:39:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://python-ai.cn/</loc>
-    <lastmod>2022-04-23T13:39:55+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://python-ai.cn/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://python-ai.cn/tags/</loc>
   </url>
   
 </urlset>
