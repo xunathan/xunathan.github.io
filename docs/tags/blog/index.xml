@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>blog on 编程分享</title>
+    <link>http://python-ai.cn/tags/blog/</link>
+    <description>Recent content in blog on 编程分享</description>
+    <image>
+      <url>http://python-ai.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://python-ai.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 25 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://python-ai.cn/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu下使用Hugo在GitHub Pages上搭建免费个人网站</title>
+      <link>http://python-ai.cn/posts/how_to_use_hugo_github/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://python-ai.cn/posts/how_to_use_hugo_github/</guid>
+      <description>１．安装配置Hugo，也可参考官方网站  安装hugo  apt install hugo  创建网站 后面的-f yml是配置文件的格式，也可以不要，这意思是选择yml格式的配置文件，有些主题推荐某些格式  hugo new site github_blog　-f yml  选择一个主题 可以去官方的主题网站，我选择的是PaperMod,直接在github上找到，可以参考教程  cd github_blog git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 主题添加之后找到主题的配置文件覆盖本地的配置文件config.yml．
+ 写一篇文章  hugo new posts/my-first-post.md  建立本地服务  hugo server -D 本地网址打开：http://localhost:1313/
+如果觉得网页没有问题了便可以使用如下命令：
+hugo 如此一来网页便生成在默认的public子目录中了。
+2.发布并托管到github上  上传到Github之前，先在Github中添加一个空白repository，注意不要添加如README，.gitignore等文档 注意：名称格式最好为：用户名.github.io   cd github_blog git add . git commit -m &amp;quot;first commit&amp;quot; git remote add origin https://github.com/xunathan/xunathan.github.io.git git push -u origin main 至此所有源文档就都push到Github上了。然而此时Github对待这些源文档跟其他任何普通的repository中的代码并没有任何不同，并不会将public子目录中的网页托管在Github Pages上。 hugo官方文档上有两种方式让我们的Github Pages加载public中的网页： 我选择的是：配置Hugo将网页生成在名为/docs的子目录中，然后直接push到main branch，这样做的优点是本地整个hugo网站也可以在github托管维护，github　pages只加载/docs下的网页．</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on 编程分享</title>
+    <link>http://python-ai.cn/tags/python/</link>
+    <description>Recent content in python on 编程分享</description>
+    <image>
+      <url>http://python-ai.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://python-ai.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://python-ai.cn/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于Ｐython的会计后续教育半自动听课脚本</title>
+      <link>http://python-ai.cn/posts/python_scripts/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://python-ai.cn/posts/python_scripts/</guid>
+      <description>会计后续教育听课会弹出问题，如果不解答视频就不会听下去，经观察发现问题的位置一般比较固定，所以可以开发一个简单的脚本辅助听课。
+ 运行环境:python3  首先开发一个小脚本获取点击答案的鼠标位置 import time import win32api import win32con def setMouseLession(): while True: pos = win32api.GetCursorPos() print(pos[0],pos[1]) time.sleep(1) 获取播放暂时时题目的位置，按照单选和多选，点击答案和提交答案获取鼠标位置，把这些位置记录下来，定时点击即可 #!/usr/bin/env python from pymouse import PyMouse import time from PIL import Image from PIL import ImageGrab def get_RGB(pixelX, pixelY): im = ImageGrab.grab((0,0,1366,768)) im.save(&#39;screen.jpg&#39;,&#39;jpeg&#39;) img_src = Image.open(&#39;screen.jpg&#39;) img_src = img_src.convert(&#39;RGBA&#39;) str_strlist = img_src.load() RGBA = str_strlist[pixelX, pixelY] img_src.close() return RGBA def printTime(): print(&amp;quot;begin work&amp;quot; + time.strftime(&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;, time.localtime())) #这是在我的屏幕上获取的答案的位置 A=(277,384) B=(277,414) C=(277,444) D=(277,474) E=(277,504) S=(667,597) Err_S=(674,456) allRst = (A,B,C,D,E) multiAllRst = ((A,C),(A,C),(A,D),(B,C),(B,D),(C,D),(A,B,C),(A,B,D),(B,C,D),(A,B,C,D)) m = PyMouse() def isSame(): im1 = ImageGrab.</description>
+    </item>
+    
+  </channel>
+</rss>
