@@ -69,3 +69,14 @@ hugo官方文档上有两种方式让我们的Github Pages加载public中的网�
 
 ### 4.个人域名
 可以在setting->Pages中找到custom domain设置你的个人域名．
+
+### 5.markdown处理本地图片
+本地图片放到static下img路径下
+```
+cd github_blog/static
+mkdir img
+```
+makrdown中插入图片语法如下:
+```
+![](/img/how_to_use_hugo_github/config.png)
+```
