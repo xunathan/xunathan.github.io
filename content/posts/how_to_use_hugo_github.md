@@ -42,7 +42,7 @@ hugo
 
 ### 2.发布并托管到github上
 * 上传到Github之前，先在Github中添加一个空白repository，注意不要添加如README，.gitignore等文档 **注意：名称格式最好为：用户名.github.io**
-![](../../static/how_to_use_hugo_github/github.png)
+![](/img/how_to_use_hugo_github/github.png)
 
 ```
 cd github_blog
@@ -55,12 +55,12 @@ git push -u origin main
 hugo官方文档上有两种方式让我们的Github Pages加载public中的网页：
 我选择的是：**配置Hugo将网页生成在名为/docs的子目录中，然后直接push到main branch**，这样做的优点是本地整个hugo网站也可以在github托管维护，github　pages只加载/docs下的网页．
 * 首先网页生成到/docs目录，修改配置文件(publishDir:docs)
-![](../../static/how_to_use_hugo_github/config.png)
+![](/img/how_to_use_hugo_github/config.png)
 
 自此,运行hugo命令后生成的网页文件将保存在/docs子目录下，要运行下hugo，然后commit修改并push到github.
 
 * 修改github pages显示docs目录下的网页(setting->Pages),修改Source为下图
-![](../../static/how_to_use_hugo_github/github_pages.png)
+![](/img/how_to_use_hugo_github/github_pages.png)
 
 等待片刻即可访问http://your_name.github.io看到之前用Hugo生成的网页了。
 
