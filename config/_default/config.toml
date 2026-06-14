@@ -16,18 +16,3 @@ disqusShortname = "hugo-theme-stack"
 
 [pagination]
     pagerSize = 5
-
-comments:
-  enabled: true
-  provider: giscus
-
-  giscus:
-    repo: xunathan/xunathan.github.io
-    repoID: R_kgDOSzRHjg
-    category: Announcements
-    categoryID: DIC_kwDOSzRHjs4C-4vI
-    mapping: pathname
-    reactionsEnabled: 1
-    emitMetadata: 0
-    inputPosition: top
-    theme: preferred_color_scheme

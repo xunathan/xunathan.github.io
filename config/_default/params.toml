@@ -51,7 +51,17 @@ SortBy              = "default"
 ## Comments
 [comments]
     enabled  = true
-    provider = "disqus"
+    provider = "giscus"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
+[comments.giscus]
+repo = "xunathan/xunathan.github.io"
+repoID = "R_kgDOSzRHjg"
+category = "Announcements"
+categoryID = "DIC_kwDOSzRHjs4C-4vI"
+mapping = "pathname"
+reactionsEnabled = true
+emitMetadata = false
+inputPosition = "top"
+theme = "preferred_color_scheme"
