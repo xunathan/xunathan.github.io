@@ -1,5 +1,5 @@
 ---
-title: 使用Pytorch入门深度学习
+title: PyTorch深度学习入门
 date: 2026-06-14 00:00:00+0000
 description: 深度学习入门，使用Pytorch框架搭建一个简单的深度学习模型，并训练保存模型。
 categories:
