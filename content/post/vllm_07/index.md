@@ -28,11 +28,11 @@ vllm启动的时候会查看Free memory,比如我的RTX 2060s 8G跑Qwen3.5:2B模
 | 峰值激活 | 1.74 GiB | profiling 阶段测出的 prefill 峰值激活，之后释放，只用来算 KV 预算 |
 
 ### vllm推理的显存要求
-  vllm推理大模型的刚性成本 ≈ 4.51 + 1.74 + 0.06 ≈ 6.3 GiB——这解释了之前测试的发现：gpu-mem-util 低于 ~0.85 时 KV cache 趋近于 0（case 3:
+  vllm推理大模型的刚性成本 ≈ 4.51 + 1.74 ≈ 6.3 GiB——这解释了之前测试的发现：gpu-mem-util 低于 ~0.85 时 KV cache 趋近于 0（case 3:
   util=0.85 时 KV 只剩 0.22 GiB）。
 
-  KV cache = util × 总显存 − 权重 − 峰值激活 − cudagraph 池
-          = 0.95 × 7.6 − 4.51 − 1.74 − 0.06 ≈ 0.88 GiB
+  KV cache = util × 总显存 − 权重 − 峰值激活
+          = 0.95 × 7.6 − 4.51 ≈ 0.98 GiB
 
   KV cache 不是固定大小，是"剩多少给多少"。
   
