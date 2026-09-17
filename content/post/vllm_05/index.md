@@ -66,3 +66,5 @@ vLLM 有一个中心化的块管理器,像操作系统管理物理内存页一�
 这套设计把 KV Cache 的显存浪费控制在很低的水平(接近于只有最后一个块的部分浪费),显存利用率能提升到接近 90% 以上。省下来的显存直接转化成了更大的 batch size，提高显卡的并发数。
 
 ## Prefix Cache
+
+上面的章节讲 KV Cache 的原理和 vLLM 用 PagedAttention 解决显存碎片问题的思路。这次讲一个建立在 PagedAttention 之上的优化——**Automatic Prefix Caching(自动前缀缓存,简称 APC)**,它解决的是另一个很常见的浪费:同样的前缀内容,被不同请求反复计算。
